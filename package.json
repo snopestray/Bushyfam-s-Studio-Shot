@@ -1,16 +1,28 @@
 {
   "name": "bushyfam-studio-shot",
   "version": "1.0.0",
-  "description": "An application that transforms uploaded product images into high-quality, studio-style photos using the Gemini API, deployed on Vercel.",
+  "description": "Eine Anwendung, die hochgeladene Produktbilder mithilfe der Gemini-API in hochwertige Fotos im Studiostil umwandelt. Sie verbessert die Beleuchtung, entfernt Hintergründe und korrigiert die Farben, um die Bilder für E-Commerce-Kataloge geeignet zu machen.",
   "private": true,
   "scripts": {
-    "build": "tsc"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "@google/genai": "^1.21.0"
+    "@google/genai": "^1.21.0",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "next": "14.2.4",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "@vercel/node": "^3.2.0",
+    "@types/file-saver": "^2.0.7",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   }
 }
